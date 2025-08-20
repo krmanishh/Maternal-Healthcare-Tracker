@@ -1,0 +1,255 @@
+/* Maternal Healthcare Tracker Custom Styles */
+
+:root {
+    --primary-color: #e91e63;
+    --secondary-color: #f8bbd9;
+    --success-color: #4caf50;
+    --danger-color: #f44336;
+    --warning-color: #ff9800;
+    --info-color: #2196f3;
+    --dark-color: #212529;
+    --light-color: #f8f9fa;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-color);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: var(--primary-color) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #c2185b;
+    border-color: #c2185b;
+}
+
+.card {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: none;
+    border-radius: 10px;
+}
+
+.card-header {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 10px 10px 0 0 !important;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 30px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: -30px;
+    width: 2px;
+    background-color: var(--secondary-color);
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+.timeline-item.active::after {
+    background-color: var(--success-color);
+}
+
+.timeline-item.completed::after {
+    background-color: var(--info-color);
+}
+
+.emergency-button {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 50px;
+}
+
+.risk-badge {
+    font-size: 12px;
+    padding: 5px 10px;
+}
+
+.risk-low {
+    background-color: var(--success-color);
+}
+
+.risk-moderate {
+    background-color: var(--warning-color);
+}
+
+.risk-high {
+    background-color: var(--danger-color);
+}
+
+.stats-card {
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.stats-card i {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.stats-number {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.login-card {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.register-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.nutrition-tip {
+    border-left: 4px solid var(--primary-color);
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+    border-radius: 0 10px 10px 0;
+}
+
+.alert-high {
+    border-left-color: var(--danger-color);
+}
+
+.alert-medium {
+    border-left-color: var(--warning-color);
+}
+
+.alert-low {
+    border-left-color: var(--info-color);
+}
+
+.dashboard-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 30px 0;
+    margin-bottom: 30px;
+}
+
+.trimester-progress {
+    height: 10px;
+    background-color: var(--light-color);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.trimester-progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, var(--success-color), var(--primary-color));
+    transition: width 0.3s ease;
+}
+
+.sidebar {
+    background-color: white;
+    min-height: 100vh;
+    box-shadow: 2px 0 4px rgba(0,0,0,0.1);
+}
+
+.sidebar .nav-link {
+    color: var(--dark-color);
+    padding: 15px 20px;
+    border-radius: 0;
+}
+
+.sidebar .nav-link:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.sidebar .nav-link.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .timeline-item {
+        padding-left: 30px;
+    }
+    
+    .timeline-item::before {
+        left: 10px;
+    }
+    
+    .timeline-item::after {
+        left: 6px;
+    }
+    
+    .stats-card {
+        margin-bottom: 15px;
+    }
+    
+    .emergency-button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+.table-responsive {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.btn-group-sm > .btn, .btn-sm {
+    border-radius: 20px;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(233, 30, 99, 0.25);
+}
+
+.pregnancy-week {
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.edd-countdown {
+    font-size: 24px;
+    color: var(--info-color);
+}
