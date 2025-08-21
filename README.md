@@ -10,6 +10,7 @@ A comprehensive web-based maternal healthcare management system designed to impr
 ## 🌟 Features
 
 ### For Pregnant Women
+
 - **👩‍⚕️ Easy Registration**: Simple registration with pregnancy details
 - **📊 Personal Dashboard**: Comprehensive pregnancy timeline and progress tracking
 - **🍎 Nutrition Guidance**: Trimester-specific nutrition tips and recommendations
@@ -18,6 +19,7 @@ A comprehensive web-based maternal healthcare management system designed to impr
 - **⚡ Risk Monitoring**: Real-time risk level assessment and alerts
 
 ### For Doctors/ASHA Workers
+
 - **👥 Patient Management**: Complete patient list with risk categorization
 - **📝 Visit Recording**: Detailed ANC visit forms with health parameters
 - **🔍 Health Tracking**: Monitor BP, Hemoglobin, weight, and other vital signs
@@ -26,6 +28,7 @@ A comprehensive web-based maternal healthcare management system designed to impr
 - **👨‍⚕️ Assignment Management**: Manage assigned patients efficiently
 
 ### For Administrators
+
 - **📊 Analytics Dashboard**: Comprehensive system statistics and trends
 - **👤 User Management**: Manage all system users and roles
 - **📋 Report Generation**: Excel/PDF export capabilities
@@ -44,23 +47,27 @@ A comprehensive web-based maternal healthcare management system designed to impr
 ## 🚀 Quick Start
 
 ### Prerequisites
+
 - XAMPP (Apache + MySQL + PHP) or similar LAMP/WAMP stack
 - Web browser (Chrome, Firefox, Safari, Edge)
 
 ### Installation
 
 1. **Download and Install XAMPP**
+
    ```
    Visit: https://www.apachefriends.org/
    Download and install XAMPP with Apache, MySQL, and PHP
    ```
 
 2. **Setup the Application**
+
    - Download/clone this repository
    - Copy the `maternal_healthcare_tracker` folder to `C:/xampp/htdocs/`
    - Or run the included `setup.bat` script (Windows only)
 
 3. **Database Setup**
+
    - Start Apache and MySQL from XAMPP Control Panel
    - Open http://localhost/phpmyadmin
    - Create database: `maternal_healthcare`
@@ -71,14 +78,6 @@ A comprehensive web-based maternal healthcare management system designed to impr
    Open: http://localhost/maternal_healthcare_tracker
    ```
 
-### Default Login Credentials
-
-| Role | Username | Password | Description |
-|------|----------|----------|-------------|
-| Admin | `admin` | `admin123` | System administrator |
-| Doctor | `dr_sharma` | `doctor123` | Sample doctor/ASHA worker |
-| Patient | Register new | - | Use registration page |
-
 ## 📁 Project Structure
 
 ```
@@ -86,7 +85,7 @@ maternal_healthcare_tracker/
 ├── 🏠 index.php                 # Login page
 ├── 📝 register.php              # Patient registration
 ├── 👩‍⚕️ patient_dashboard.php     # Patient interface
-├── 👨‍⚕️ doctor_dashboard.php      # Doctor interface  
+├── 👨‍⚕️ doctor_dashboard.php      # Doctor interface
 ├── ⚙️ admin_dashboard.php        # Admin interface
 ├── 🔐 logout.php                # Logout handler
 ├── 📊 config/                   # Configuration files
@@ -108,40 +107,43 @@ maternal_healthcare_tracker/
 
 ## 🔧 API Endpoints
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | `/backend/auth/auth.php` | User authentication |
-| GET | `/backend/api/visits.php` | Retrieve visit records |
-| POST | `/backend/api/visits.php` | Create new visit |
-| PUT | `/backend/api/visits.php` | Update visit record |
-| DELETE | `/backend/api/visits.php` | Delete visit record |
-| POST | `/backend/api/resolve_alert.php` | Resolve risk alerts |
+| Method | Endpoint                         | Description            |
+| ------ | -------------------------------- | ---------------------- |
+| POST   | `/backend/auth/auth.php`         | User authentication    |
+| GET    | `/backend/api/visits.php`        | Retrieve visit records |
+| POST   | `/backend/api/visits.php`        | Create new visit       |
+| PUT    | `/backend/api/visits.php`        | Update visit record    |
+| DELETE | `/backend/api/visits.php`        | Delete visit record    |
+| POST   | `/backend/api/resolve_alert.php` | Resolve risk alerts    |
 
 ## 📊 Database Schema
 
-| Table | Purpose |
-|-------|---------|
-| `users` | User accounts and authentication |
-| `pregnancies` | Pregnancy records and details |
-| `visits` | ANC visit records and health data |
-| `reminders` | Automated reminder system |
-| `risk_alerts` | Risk detection and alerts |
-| `nutrition_tips` | Trimester-based nutrition advice |
-| `emergency_contacts` | Emergency service information |
+| Table                | Purpose                           |
+| -------------------- | --------------------------------- |
+| `users`              | User accounts and authentication  |
+| `pregnancies`        | Pregnancy records and details     |
+| `visits`             | ANC visit records and health data |
+| `reminders`          | Automated reminder system         |
+| `risk_alerts`        | Risk detection and alerts         |
+| `nutrition_tips`     | Trimester-based nutrition advice  |
+| `emergency_contacts` | Emergency service information     |
 
 ## 🔄 Automated Features
 
 ### Risk Detection Engine
+
 - Automatic monitoring of health parameters
 - Real-time alert generation for high-risk conditions
 - Trigger-based risk level updates
 
 ### Reminder System
+
 - Scheduled ANC visit reminders
 - Email and SMS notifications (configurable)
 - WHO guideline-based visit scheduling
 
 ### Analytics & Reporting
+
 - Real-time dashboard updates
 - Automated report generation
 - Compliance tracking and monitoring
@@ -157,6 +159,7 @@ maternal_healthcare_tracker/
 ## 🎯 WHO Compliance
 
 This system follows World Health Organization (WHO) guidelines for:
+
 - ✅ ANC visit scheduling (8 visits minimum)
 - ✅ Risk assessment protocols
 - ✅ Maternal nutrition recommendations
@@ -166,6 +169,7 @@ This system follows World Health Organization (WHO) guidelines for:
 ## 📈 Scalability
 
 The system is designed to handle:
+
 - **Users**: 1,000+ concurrent users
 - **Data**: Millions of visit records
 - **Performance**: Optimized database queries
@@ -194,6 +198,7 @@ This is an educational project. For healthcare implementation:
 ## 📄 License
 
 This project is created for educational purposes. For production use in healthcare settings, ensure compliance with:
+
 - Local healthcare regulations (FDA, CE marking, etc.)
 - Data protection laws (GDPR, HIPAA, etc.)
 - Security standards (ISO 27001, NIST, etc.)
@@ -201,17 +206,20 @@ This project is created for educational purposes. For production use in healthca
 ## 🆘 Support
 
 ### Documentation
+
 - 📖 [Deployment Guide](DEPLOYMENT_GUIDE.md) - Complete setup instructions
 - 📝 [API Documentation](backend/api/) - RESTful API details
 - 🗄️ [Database Schema](database/schema.sql) - Database structure
 
 ### Common Issues
+
 1. **Database Connection**: Check credentials in `config/database.php`
 2. **File Permissions**: Ensure proper read/write permissions
 3. **XAMPP Issues**: Verify Apache and MySQL are running
 4. **Browser Compatibility**: Use modern browsers (Chrome, Firefox, Safari, Edge)
 
 ### System Requirements
+
 - **OS**: Windows 10+, macOS 10.14+, Ubuntu 18.04+
 - **RAM**: 4GB minimum, 8GB recommended
 - **Storage**: 10GB free space

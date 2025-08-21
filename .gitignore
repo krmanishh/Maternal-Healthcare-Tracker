@@ -1,81 +1,27 @@
-# Maternal Healthcare Tracker - GitIgnore File
-
-# Logs and temporary files
-*.log
-logs/*.txt
-logs/*.log
-temp/
-tmp/
-
-# Environment and configuration files with sensitive data
-.env
-.env.local
-.env.production
-config/database_production.php
-
-# IDE and editor files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# OS generated files
+# OS / editor
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
+.idea/
+.vscode/
+*.swp
 
-# PHP specific
+# PHP / Composer / Node
 vendor/
-composer.phar
-composer.lock
-
-# Backup files
-*.bak
-*.backup
-*.old
-
-# Cache and session files
-cache/
-sessions/
-*.cache
-
-# Upload directories (if you add file upload features)
-uploads/
-files/
-
-# Database dumps (keep schema.sql but ignore data dumps)
-*.sql.gz
-backup_*.sql
-dump_*.sql
-
-# Local development files
-xampp/
-wamp/
-local_config.php
-
-# Node modules (if you add npm packages later)
 node_modules/
+composer.lock
 package-lock.json
 
-# Build files
-build/
-dist/
+# Env / config / logs / cache
+.env
+.env.*
+config.php
+*.log
+*.cache
+storage/
+cache/
+tmp/
+coverage/
 
-# Error logs
-error_log
-php_errors.log
-
-# Email and SMS service configuration (sensitive)
-email_config.php
-sms_config.php
-twilio_config.php
-
-# Test files
-test_data/
-phpunit.xml
-.phpunit.result.cache
+# SQL (keep only schema file at root)
+*.sql
+!maternal_healthcare.sql
