@@ -71,13 +71,6 @@ A comprehensive web-based maternal healthcare management system designed to impr
    Open: http://localhost/maternal_healthcare_tracker
    ```
 
-### Default Login Credentials
-
-| Role | Username | Password | Description |
-|------|----------|----------|-------------|
-| Admin | `admin` | `admin123` | System administrator |
-| Doctor | `dr_sharma` | `doctor123` | Sample doctor/ASHA worker |
-| Patient | Register new | - | Use registration page |
 
 ## 📁 Project Structure
 
